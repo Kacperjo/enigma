@@ -57,11 +57,13 @@ let enigma_na_pol = {
 ' ': " "
 };
 function zak() {
-  let input = document.getElementById("text").value;
+  let input = document.getElementById("text").value.toLowerCase();
   let ciąg = ' ';
   for (let leter in input) {
-    if (pol_na_enigme.includes(leter)) {
-      ciąg += string(leter)
+    if (leter in pol_na_enigme) {
+      ciąg += pol_na_enigme[leter];
+    } else {
+      ciąg += leter;
     }
   }
   document.getElementById("output").innerText = ciąg;
