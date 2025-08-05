@@ -64,5 +64,5 @@ function zak() {
       ciąg += string(leter)
     }
   }
-  document.getElementById("output").innerText = ciąg
+  document.getElementById("output").innerText = ciąg;
 }
