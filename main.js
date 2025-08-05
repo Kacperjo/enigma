@@ -67,5 +67,7 @@ function zak() {
       ciąg += leter
     }
   }
+}
+function wyswietl() {
   document.getElementById("output").innerText = ciąg;
 }
