@@ -59,7 +59,8 @@ let enigma_na_pol = {
 function zak() {
   let input = document.getElementById("text").value.toLowerCase();
   let ciąg = ' ';
-  for (let leter in input) {
+  let leter;
+  for (leter in input) {
     if (leter in pol_na_enigme) {
       ciąg += string(pol_na_enigme[leter]);
     } else {
