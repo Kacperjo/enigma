@@ -58,5 +58,11 @@ let enigma_na_pol = {
 };
 function zak() {
   let input = document.getElementById("text").value;
-  document.getElementById("output").innerText = input;
+  let ciąg = ' ';
+  for leter in input {
+    if (leter in pol_na_enigme) {
+      ciąg += leter
+    }
+  }
+  document.getElementById("output").innerText = ciąg
 }
