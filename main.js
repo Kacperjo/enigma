@@ -61,11 +61,10 @@ function zak() {
   let ciąg = ' ';
   for (let leter in input) {
     if (leter in pol_na_enigme) {
-      ciąg += pol_na_enigme[leter];
+      ciąg += string(pol_na_enigme[leter]);
     } else {
       ciąg += leter
     }
   }
-  document.getElementById("spraed").innerText = pol_na_enigme[leter];
   document.getElementById("output").innerText = ciąg;
 }
