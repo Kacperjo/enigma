@@ -63,7 +63,9 @@ function zak() {
     if (leter in pol_na_enigme) {
       ciąg += pol_na_enigme[leter];
     } else {
+      ciąg += leter
     }
   }
+  document.getElementById("spraed").innerText = pol_na_enigme[leter];
   document.getElementById("output").innerText = ciąg;
 }
